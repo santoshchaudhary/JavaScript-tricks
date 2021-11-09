@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// JSON with local storage
 const person = {
     name: "Obaseki Nosa",
     location: "Lagos",
