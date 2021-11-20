@@ -37,6 +37,16 @@ fetch(req)
         console.log('Error: ', err.message)
     })
 
+
+
+
+
+
+
+
+
+
+    
 /*
 
 // Fundamentals of the JavaScript fetch method for AJAX
