@@ -26,13 +26,27 @@ import HookCounterFour from './hooks/HookCounterFour';
 import HookCounterOne from './hooks/HookCounterOne';
 import ClassCounterOne from './hooks/ClassCounterOne';
 
+
+// simpli learn
+import Main from './SimpliLearn/Main';
+
+
+
+
 function App() {
 	return (
 		<div className="App">
+
+			{/* SimpliLearn */}
+			<Main />
+
+
+
+
 			
 			{/* React Hooks */}
-			<HookCounterOne />
-			<ClassCounterOne></ClassCounterOne>
+			{/* <HookCounterOne />
+			<ClassCounterOne></ClassCounterOne> */}
 
 
 			{/* <HookCounterFour /> */}

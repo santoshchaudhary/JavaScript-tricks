@@ -1,3 +1,59 @@
+// First Apporach Start
+
+//function for Inheritance
+function extend(child, parent) {
+	child.prototype = Object.create(parent.prototype);
+	child.prototype.constructor = child;
+}
+
+// Super Class
+var Mobile = function() {
+
+}
+
+// Prototype method
+Mobile.prototype.getModel = function() {
+	return this.model;
+}
+
+
+// Sub Class
+var Samsung = function(model, price) {
+	this.model = model;
+	this.price = price;
+}
+
+var Sony = function(model) {
+	this.model = model;
+}
+
+// Inheritance
+// Second way through top function, child and parent
+extend(Samsung, Mobile);
+extend(Sony, Mobile);
+
+// First way
+/* Samsung.prototype = Object.create(Mobile.prototype);
+Samsung.prototype.constructor = Samsung;
+
+Sony.prototype = Object.create(Mobile.prototype);
+Sony.prototype.constructor = Sony; */
+
+
+var galaxy = new Samsung('Galaxy', 3000);
+console.log(galaxy.getModel());
+
+var phab2 = new Sony('Phab2');
+console.log(phab2.getModel());
+
+
+// First Apporach End
+
+
+
+
+
+
 let PersonP = function(nm, id) {
     this.name = nm;
     this.id = id;

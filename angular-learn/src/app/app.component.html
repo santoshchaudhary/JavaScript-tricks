@@ -1,36 +1,106 @@
-<!-- <div>
-    <h3>Component Interaction : @input Method</h3>
-    <app-parent></app-parent>
-    <hr>
+<div class="container-fluid p-3">
+    <div class="row">
+        <div class="col-sm-3">
+            <aside>
+                <h5>Angular</h5>
+                <ul class="navigation">
+                    <li>
+                        <a [routerLink]="['home']" >Home</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['services']" >Services</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['common']" >Common</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['dependency']" >Dependency Injection</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['form']" >Template & Reactive Form</a>
+                    </li>
+                    
+                </ul>
+                <h5>RX JS <strong class="text-success" *ngIf="exclusive">Exclusive*</strong></h5>
+                <ul class="navigation">
+                    <li>
+                        <a [routerLink]="['interval']" >Interval</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['of-from']" >Of & From</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['toArray']" >toArray</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['customObservable']" >custom Observable</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['map']" >Map Operator</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['pluck']" >Pluck Operator</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['filter']" >Filter Operator</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['tap']" >Tap Operator</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['take']" >Take Operator</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['retry']" >Retry Operator - Important</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['debounce']" >Debounce Time & DistinctUntilChanged</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['subject']" >Subject & BehaviorSubject</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <div class="col-sm-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>
 
-<div>
-    <h3>Component Interaction : @output Method</h3>
-    <app-parent-a></app-parent-a>
-    <hr>
+
+
+
+
+
+
+
+<div class="container-fluid" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <ng-container>
+                Hello I am ng container
+            </ng-container>
+            <ng-template>
+                Hello I am ng template
+            </ng-template>
+            
+            
+            
+            <input type="text" [(ngModel)]="hello">
+            {{hello}}
+            
+            <input type="text" [(ngModel)]="city" (change)='getValue()'>
+            
+            <h1>Hello {{name}}</h1>
+        </div>
+    </div>
 </div>
 
 
-<div>
-    <h3>Component Interaction : onChange Method</h3>
-    <app-parent-b></app-parent-b>
-    <hr>
-</div>
 
-<div>
-    <h3>Component Interaction : getter & setter Method</h3>
-    <app-parent-c></app-parent-c>
-    <hr>
-</div>
+<!-- 
+<app-common></app-common>
 
-<div>
-    <h3>Component Interaction : Using a Service Method</h3>
-    <app-parent-d></app-parent-d>
-    <hr>
-</div>
 
-<div>
-    <h3>Binding : One way & Two way</h3>
-    <app-binding></app-binding>
-    <hr>
-</div> -->
+-->
