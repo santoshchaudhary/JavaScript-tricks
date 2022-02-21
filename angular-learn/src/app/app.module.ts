@@ -45,6 +45,19 @@ import { SubjectComponent } from './subject/subject.component';
 import { Comp1Component } from './subject/comp1/comp1.component';
 import { Comp2Component } from './subject/comp2/comp2.component';
 import { Comp3Component } from './subject/comp3/comp3.component';
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
+import { SingletonComponent } from './singleton/singleton.component';
+import { Agent1Component } from './singleton/agent1/agent1.component';
+import { Agent2Component } from './singleton/agent2/agent2.component';
+import { BusBookingService } from './singleton/bus-booking.service';
+import { HeaderComponent } from './components/header/header.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
+import { OnChangeComponent } from './components/life-cycle/on-change/on-change.component';
+import { LifeCycleFormComponent } from './components/life-cycle/life-cycle-form/life-cycle-form.component';
+import { DoCheckComponent } from './components/life-cycle/do-check/do-check.component';
+import { CustomDirectiveComponent } from './components/custom-directive/custom-directive.component';
+import { CustomDirective } from './components/custom-directive/custom.directive';
 
 
 
@@ -91,7 +104,19 @@ import { Comp3Component } from './subject/comp3/comp3.component';
     SubjectComponent,
     Comp1Component,
     Comp2Component,
-    Comp3Component
+    Comp3Component,
+    ReplaySubjectComponent,
+    SingletonComponent,
+    Agent1Component,
+    Agent2Component,
+    HeaderComponent,
+    NgIfComponent,
+    LifeCycleComponent,
+    OnChangeComponent,
+    LifeCycleFormComponent,
+    DoCheckComponent,
+    CustomDirectiveComponent,
+    CustomDirective
   ],
   imports: [
     BrowserModule,
@@ -100,7 +125,7 @@ import { Comp3Component } from './subject/comp3/comp3.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [DesignService, StudentAddressService],
+  providers: [DesignService, StudentAddressService, BusBookingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

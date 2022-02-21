@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { UserService } from './user.service';
@@ -13,7 +14,7 @@ export class UserDetailsComponent implements OnInit {
 
   userDetails$:Observable<any>;
 
-  constructor(private _userDetailsService: UserService) {
+  constructor(private _userDetailsService: UserService, private http: HttpClient) {
 
     // let userData = this._userDetailsService.getUserData();
     // console.log(userData);
@@ -30,7 +31,13 @@ export class UserDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    //this.getUserData();
   }
+
+  
+  // getUserData() {
+  //   let api_url = 'https://jsonplaceholder.typicode.com/users';
+  //   this.userData = this.http.get(api_url);
+  // }
 
 }

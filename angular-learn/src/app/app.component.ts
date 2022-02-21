@@ -14,9 +14,12 @@ export class AppComponent implements AfterViewInit, OnInit {
   public hello:any;
   public city:any;
   public cityArray = ['Delhi', 'Mumbai', 'Jaipur', 'Patna'];
+  
+  
+  
   getValue() {
     const low = this.city.toLowerCase();
-    const low1 = this.cityArray.map(newCity => newCity.toLocaleLowerCase());
+    const low1 = this.cityArray.map(newCity => newCity.toLowerCase());
     const out = low1.includes(low);
     if(out == true) {
       console.log(`${this.city} is matched`);
